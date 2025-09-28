@@ -1,100 +1,83 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="cs">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
+  <meta charset="UTF-8">
+  <title>Kořenový vězeň Zdena</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .bar {
+      width: 300px;
+      height: 20px;
+      background: #555;
+      margin: 10px auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .fill {
+      height: 100%;
+      width: 100%;
+      background: limegreen;
+      transition: width 0.2s;
+    }
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="cs"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Kořenový vězeň Zdena&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family: sans-serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 50px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.bar {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 300px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>height: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: #555;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 10px auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>overflow: hidden;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.fill {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>height: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: limegreen;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: width 0.2s;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Kořenový vězeň Zdena&lt;/h1&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="game"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Zdraví Zdeny:&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="bar"&gt;&lt;div id="zdenaHealth" class="fill"&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Kořen HP:&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="bar"&gt;&lt;div id="rootHealth" class="fill"&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Mačkej mezerník, abys rozbil kořen. SHIFT = křičení.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let zdenaHP = 100;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let rootHP = 100;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let gameOver = false;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const zdenaBar = document.getElementById("zdenaHealth");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const rootBar = document.getElementById("rootHealth");</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Zdenovi ubývá zdraví postupně</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>setInterval(() =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (!gameOver) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>zdenaHP -= 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (zdenaHP &lt; 0) zdenaHP = 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>zdenaBar.style.width = zdenaHP + "%";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (zdenaHP &lt;= 0) endGame("Prohra: Kořen tě pohltil!");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}, 1000);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Ovládání kláves</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.addEventListener("keydown", (e) =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (gameOver) return;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (e.code === "Space") {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>rootHP -= 5;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (rootHP &lt; 0) rootHP = 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>rootBar.style.width = rootHP + "%";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (rootHP &lt;= 0) endGame("Vyhrál jsi: Rozbil jsi kořen!");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (e.code === "ShiftLeft") {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (Math.random() &lt; 0.1) { // 10% šance, že přijdou kamarádi</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>endGame("Vyhrál jsi: Kamarádi tě zachránili!");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function endGame(message) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gameOver = true;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>alert(message);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+  <h1>Kořenový vězeň Zdena</h1>
+  
+  <div id="game">
+    <p>Zdraví Zdeny:</p>
+    <div class="bar"><div id="zdenaHealth" class="fill"></div></div>
+    
+    <p>Kořen HP:</p>
+    <div class="bar"><div id="rootHealth" class="fill"></div></div>
+    
+    <p>Mačkej mezerník, abys rozbil kořen. SHIFT = křičení.</p>
+  </div>
+  
+  <script>
+    let zdenaHP = 100;
+    let rootHP = 100;
+    let gameOver = false;
+
+    const zdenaBar = document.getElementById("zdenaHealth");
+    const rootBar = document.getElementById("rootHealth");
+
+    // Zdenovi ubývá zdraví postupně
+    setInterval(() => {
+      if (!gameOver) {
+        zdenaHP -= 1;
+        if (zdenaHP < 0) zdenaHP = 0;
+        zdenaBar.style.width = zdenaHP + "%";
+        if (zdenaHP <= 0) endGame("Prohra: Kořen tě pohltil!");
+      }
+    }, 1000);
+
+    // Ovládání kláves
+    document.addEventListener("keydown", (e) => {
+      if (gameOver) return;
+
+      if (e.code === "Space") {
+        rootHP -= 5;
+        if (rootHP < 0) rootHP = 0;
+        rootBar.style.width = rootHP + "%";
+        if (rootHP <= 0) endGame("Vyhrál jsi: Rozbil jsi kořen!");
+      }
+
+      if (e.code === "ShiftLeft") {
+        if (Math.random() < 0.1) { // 10% šance, že přijdou kamarádi
+          endGame("Vyhrál jsi: Kamarádi tě zachránili!");
+        }
+      }
+    });
+
+    function endGame(message) {
+      gameOver = true;
+      alert(message);
+    }
+  </script>
 </body>
 </html>
